@@ -1,0 +1,16 @@
+12:00:08 **** Incremental Build of configuration Debug for project source ****
+make all 
+Building file: ../Personne.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Personne.d" -MT"Personne.o" -o "Personne.o" "../Personne.cpp"
+Finished building: ../Personne.cpp
+ 
+Building target: libsource.a
+Invoking: GCC Archiver
+ar -r  "libsource.a"  ./ContratException.o ./Date.o ./Personne.o ./validationFormat.o   
+ar: création de libsource.a
+Finished building target: libsource.a
+ 
+
+12:00:09 Build Finished (took 1s.297ms)
+

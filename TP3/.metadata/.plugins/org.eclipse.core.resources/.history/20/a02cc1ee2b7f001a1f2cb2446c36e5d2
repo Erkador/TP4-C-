@@ -1,0 +1,9 @@
+#include <gtest/gtest.h>
+#include "Personne.h"
+#include "Date.h"
+
+TEST(PersonneConstructeur, PersonneValide)
+{
+	util::Date d(25, 8, 2004);
+	hockey::Joueur j("Nom", "Prenom", d, "418 498-4193", "centre");
+}

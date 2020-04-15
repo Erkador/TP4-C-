@@ -1,0 +1,12 @@
+#include <gtest/gtest.h>
+#include "Personne.h"
+#include "Date.h"
+#include "validationFormat.h"
+
+TEST(EntraineurConstructeur, EntraineurValide)
+{
+	util::Date d(25, 8, 1999);
+	hockey::Entraineur e("Jalbert", "David", d, "418 498-4193", "JALD 9908 2511", 'M');
+	ASSERT_TRUE(util::validerNumRAMQ( e.reqNumRAMQ(), e.reqNom(), e.reqPrenom(), e.reqDateNaissance().reqJour(), e.reqDateNaissance().reqMois(),
+			e.reqDateNaissance().reqAnnee(), e.reqSexe()));
+}

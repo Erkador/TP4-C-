@@ -1,0 +1,15 @@
+12:50:39 **** Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lsource -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+
+12:50:42 Build Finished (took 2s.477ms)
+

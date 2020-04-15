@@ -1,0 +1,239 @@
+12:00:08 **** Incremental Build of configuration Debug for project source ****
+make all 
+Building file: ../Personne.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Personne.d" -MT"Personne.o" -o "Personne.o" "../Personne.cpp"
+Finished building: ../Personne.cpp
+ 
+Building target: libsource.a
+Invoking: GCC Archiver
+ar -r  "libsource.a"  ./ContratException.o ./Date.o ./Personne.o ./validationFormat.o   
+ar: création de libsource.a
+Finished building target: libsource.a
+ 
+12:01:08 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../EntraineurTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EntraineurTesteur.d" -MT"EntraineurTesteur.o" -o "EntraineurTesteur.o" "../EntraineurTesteur.cpp"
+Finished building: ../EntraineurTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source/Debug" -o "Testeur"  ./EntraineurTesteur.o ./PersonneTesteur.o   -lsource -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+12:02:31 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../EntraineurTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EntraineurTesteur.d" -MT"EntraineurTesteur.o" -o "EntraineurTesteur.o" "../EntraineurTesteur.cpp"
+Finished building: ../EntraineurTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source/Debug" -o "Testeur"  ./EntraineurTesteur.o ./PersonneTesteur.o   -lsource -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+12:02:46 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../EntraineurTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EntraineurTesteur.d" -MT"EntraineurTesteur.o" -o "EntraineurTesteur.o" "../EntraineurTesteur.cpp"
+Finished building: ../EntraineurTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source/Debug" -o "Testeur"  ./EntraineurTesteur.o ./PersonneTesteur.o   -lsource -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+12:07:01 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../EntraineurTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EntraineurTesteur.d" -MT"EntraineurTesteur.o" -o "EntraineurTesteur.o" "../EntraineurTesteur.cpp"
+Finished building: ../EntraineurTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source/Debug" -o "Testeur"  ./EntraineurTesteur.o ./PersonneTesteur.o   -lsource -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+12:08:12 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../JoueurTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JoueurTesteur.d" -MT"JoueurTesteur.o" -o "JoueurTesteur.o" "../JoueurTesteur.cpp"
+Finished building: ../JoueurTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source/Debug" -o "Testeur"  ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lsource -lgtest_main -lgtest -lpthread
+./PersonneTesteur.o:(.bss+0x0) : définitions multiples de « PersonneConstructeur_PersonneValide_Test::test_info_ »
+./JoueurTesteur.o:(.bss+0x0) : défini pour la première fois ici
+./PersonneTesteur.o : Dans la fonction « testing::Test::SetUpTestCase() » :
+/mnt/hgfs/C++/Sauvegarde TP3/TP3/Testeur/Debug/../PersonneTesteur.cpp:7 : définitions multiples de « PersonneConstructeur_PersonneValide_Test::TestBody() »
+./JoueurTesteur.o:/mnt/hgfs/C++/Sauvegarde TP3/TP3/Testeur/Debug/../JoueurTesteur.cpp:7 : défini pour la première fois ici
+collect2: error: ld returned 1 exit status
+makefile:44: recipe for target 'Testeur' failed
+make: *** [Testeur] Error 1
+12:09:25 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../JoueurTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JoueurTesteur.d" -MT"JoueurTesteur.o" -o "JoueurTesteur.o" "../JoueurTesteur.cpp"
+Finished building: ../JoueurTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source/Debug" -o "Testeur"  ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lsource -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+12:10:32 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../JoueurTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JoueurTesteur.d" -MT"JoueurTesteur.o" -o "JoueurTesteur.o" "../JoueurTesteur.cpp"
+Finished building: ../JoueurTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source/Debug" -o "Testeur"  ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lsource -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+12:10:44 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../JoueurTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JoueurTesteur.d" -MT"JoueurTesteur.o" -o "JoueurTesteur.o" "../JoueurTesteur.cpp"
+Finished building: ../JoueurTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source/Debug" -o "Testeur"  ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lsource -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+12:12:30 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../JoueurTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JoueurTesteur.d" -MT"JoueurTesteur.o" -o "JoueurTesteur.o" "../JoueurTesteur.cpp"
+Finished building: ../JoueurTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source/Debug" -o "Testeur"  ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lsource -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+12:16:04 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lsource -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+12:17:38 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lsource -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+12:21:50 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+In file included from /usr/include/gtest/gtest.h:58:0,
+                 from ../AnnuaireTesteur.cpp:1:
+../AnnuaireTesteur.cpp: In member function ‘virtual void AnnuaireBase_ajouterPersonneValide_Test::TestBody()’:
+../AnnuaireTesteur.cpp:42:14: error: ‘b’ was not declared in this scope
+  ASSERT_TRUE(b.m_vMembres.size() == 1);
+              ^
+subdir.mk:27: recipe for target 'AnnuaireTesteur.o' failed
+make: *** [AnnuaireTesteur.o] Error 1
+12:22:14 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lsource -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+12:23:49 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+In file included from ../AnnuaireTesteur.cpp:1:0:
+/usr/include/gtest/gtest.h: In instantiation of ‘testing::AssertionResult testing::internal::CmpHelperEQ(const char*, const char*, const T1&, const T2&) [with T1 = hockey::Annuaire; T2 = hockey::Annuaire]’:
+/usr/include/gtest/gtest.h:1484:23:   required from ‘static testing::AssertionResult testing::internal::EqHelper<lhs_is_null_literal>::Compare(const char*, const char*, const T1&, const T2&) [with T1 = hockey::Annuaire; T2 = hockey::Annuaire; bool lhs_is_null_literal = false]’
+../AnnuaireTesteur.cpp:48:2:   required from here
+/usr/include/gtest/gtest.h:1448:16: error: no match for ‘operator==’ (operand types are ‘const hockey::Annuaire’ and ‘const hockey::Annuaire’)
+   if (expected == actual) {
+       ~~~~~~~~~^~~~~~~~~
+In file included from /usr/include/gtest/internal/gtest-param-util.h:45:0,
+                 from /usr/include/gtest/gtest-param-test.h:192,
+                 from /usr/include/gtest/gtest.h:62,
+                 from ../AnnuaireTesteur.cpp:1:
+/usr/include/gtest/internal/gtest-linked_ptr.h:213:6: note: candidate: template<class T> bool testing::internal::operator==(T*, const testing::internal::linked_ptr<T>&)
+ bool operator==(T* ptr, const linked_ptr<T>& x) {
+      ^~~~~~~~
+/usr/include/gtest/internal/gtest-linked_ptr.h:213:6: note:   template argument deduction/substitution failed:
+In file included from ../AnnuaireTesteur.cpp:1:0:
+/usr/include/gtest/gtest.h:1448:16: note:   mismatched types ‘T*’ and ‘hockey::Annuaire’
+   if (expected == actual) {
+       ~~~~~~~~~^~~~~~~~~
+subdir.mk:27: recipe for target 'AnnuaireTesteur.o' failed
+make: *** [AnnuaireTesteur.o] Error 1
+12:24:03 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+In file included from /usr/include/gtest/gtest.h:58:0,
+                 from ../AnnuaireTesteur.cpp:1:
+../AnnuaireTesteur.cpp: In member function ‘virtual void AnnuaireBase_EgualValide_Test::TestBody()’:
+../AnnuaireTesteur.cpp:48:29: error: no match for ‘operator==’ (operand types are ‘hockey::Annuaire’ and ‘hockey::Annuaire’)
+  ASSERT_TRUE(f_annuaireBase == a);
+              ~~~~~~~~~~~~~~~^~~~
+subdir.mk:27: recipe for target 'AnnuaireTesteur.o' failed
+make: *** [AnnuaireTesteur.o] Error 1
+12:24:57 **** Incremental Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lsource -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 
+12:50:39 **** Build of configuration Debug for project Testeur ****
+make all 
+Building file: ../AnnuaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+Finished building: ../AnnuaireTesteur.cpp
+ 
+Building target: Testeur
+Invoking: GCC C++ Linker
+g++ -L"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lsource -lgtest_main -lgtest -lpthread
+Finished building target: Testeur
+ 

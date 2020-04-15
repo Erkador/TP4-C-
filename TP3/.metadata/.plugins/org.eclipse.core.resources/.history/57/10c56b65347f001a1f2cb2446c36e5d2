@@ -1,0 +1,10 @@
+#include <gtest/gtest.h>
+#include "Personne.h"
+#include "Date.h"
+#include "validationFormat.h"
+
+TEST(AnnuaireConstructeur, AnnuaireVideValide)
+{
+	hockey::Annuaire a("Test");
+
+}
