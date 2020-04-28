@@ -1,0 +1,15 @@
+16:53:00 **** Incremental Build of configuration Debug for project Utilisation ****
+make all 
+Building file: ../principal.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3 2/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"principal.d" -MT"principal.o" -o "principal.o" "../principal.cpp"
+Finished building: ../principal.cpp
+ 
+Building target: Utilisation
+Invoking: GCC C++ Linker
+g++ -L"/mnt/hgfs/C++/Sauvegarde TP3 2/TP3/source/Debug" -o "Utilisation"  ./principal.o   -lsource
+Finished building target: Utilisation
+ 
+
+16:53:01 Build Finished (took 1s.357ms)
+

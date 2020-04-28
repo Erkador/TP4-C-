@@ -1,15 +1,30 @@
-12:50:39 **** Build of configuration Debug for project Testeur ****
+10:08:03 **** Incremental Build of configuration Debug for project Testeur ****
 make all 
 Building file: ../AnnuaireTesteur.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3 2/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AnnuaireTesteur.d" -MT"AnnuaireTesteur.o" -o "AnnuaireTesteur.o" "../AnnuaireTesteur.cpp"
 Finished building: ../AnnuaireTesteur.cpp
+ 
+Building file: ../EntraineurTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3 2/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"EntraineurTesteur.d" -MT"EntraineurTesteur.o" -o "EntraineurTesteur.o" "../EntraineurTesteur.cpp"
+Finished building: ../EntraineurTesteur.cpp
+ 
+Building file: ../JoueurTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3 2/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"JoueurTesteur.d" -MT"JoueurTesteur.o" -o "JoueurTesteur.o" "../JoueurTesteur.cpp"
+Finished building: ../JoueurTesteur.cpp
+ 
+Building file: ../PersonneTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -I"/mnt/hgfs/C++/Sauvegarde TP3 2/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"PersonneTesteur.d" -MT"PersonneTesteur.o" -o "PersonneTesteur.o" "../PersonneTesteur.cpp"
+Finished building: ../PersonneTesteur.cpp
  
 Building target: Testeur
 Invoking: GCC C++ Linker
-g++ -L"/mnt/hgfs/C++/Sauvegarde TP3/TP3/source/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lsource -lgtest_main -lgtest -lpthread
+g++ -L"/mnt/hgfs/C++/Sauvegarde TP3 2/TP3/source/Debug" -o "Testeur"  ./AnnuaireTesteur.o ./EntraineurTesteur.o ./JoueurTesteur.o ./PersonneTesteur.o   -lsource -lgtest_main -lgtest -lpthread
 Finished building target: Testeur
  
 
-12:50:42 Build Finished (took 2s.477ms)
+10:08:09 Build Finished (took 5s.105ms)
 

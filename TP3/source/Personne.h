@@ -2,8 +2,8 @@
  * \file Personne.h
  * \brief Fichier contenant l'interface de la classe Personne qui permet le stockage d'une personnes et des ses informations.
  * \author David Jalbert Ross
- * \version 1.0
- * \date 23 février 2019
+ * \version 2.0
+ * \date 16 avril 2020
  */
 
 #ifndef PERSONNE_H_
@@ -13,10 +13,6 @@
 #include <vector>
 #include "ContratException.h"
 
-
-static const int AGE_MINIMAL_ENTRAINEUR = 18;
-static const int AGE_MINIMAL_JOUEUR = 15;
-static const int AGE_MAXIMAL_JOUEUR = 17;
 
 /**
  * \namespace Hockey
@@ -55,67 +51,11 @@ public:
 	virtual Personne* clone() const=0;
 
 private:
-	void verifieInvariantPersonne() const;
+	void verifieInvariant() const;
 	std::string m_nom;
 	std::string m_prenom;
 	util::Date m_dateNaissance;
 	std::string m_telephone;
-};
-
-class Entraineur: public Personne
-{
-public:
-	Entraineur(const std::string& p_nom, const std::string& p_prenom, const util::Date& p_dateNaissance,
-			   const std::string& p_telephone, const std::string& p_numRAMQ, char p_sexe);
-
-	const std::string reqNumRAMQ() const;
-	char reqSexe() const;
-
-	virtual std::string reqPersonneFormate() const;
-	virtual ~Entraineur() {} ;
-	virtual Personne* clone() const;
-private:
-	void verifieInvariantEntraineur() const;
-	std::string m_numRAMQ;
-	char m_sexe;
-};
-
-class Joueur: public Personne
-{
-public:
-	Joueur(const std::string& p_nom, const std::string& p_prenom, const util::Date& p_dateNaissance,
-			   const std::string& p_telephone, const std::string& p_position);
-
-	const std::string reqPosition() const;
-	virtual std::string reqPersonneFormate() const;
-	virtual ~Joueur() {} ;
-	virtual Personne* clone() const;
-
-private:
-	bool verifiePosition(const std::string& p_position) const;
-	void verifieInvariantJoueur() const;
-	std::string m_position;
-};
-
-class Annuaire
-{
-public:
-	Annuaire(const std::string p_nomClub);
-	Annuaire(const Annuaire& p_annuaire);
-
-	const std::string reqNomClub() const;
-	const std::string reqAnnuaireFormate() const;
-	void ajouterPersonne (const Personne& p_personne);
-
-	void operator=(const Annuaire& p_annuaire);
-
-	~Annuaire();
-
-	std::vector<Personne*> m_vMembres;
-
-private:
-	void verifieInvariantAnnuaire() const;
-	std::string m_nomClub;
 };
 
 }
